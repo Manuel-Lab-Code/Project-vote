@@ -1,13 +1,13 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	background-color: green;
+	/*background-color: green;*/
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 
 }
 .header {
-	min-height: 1vh;
+	min-height: vh;
 	background-color: black;
 	background-size: cover;
 }
@@ -18,22 +18,27 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 60px;
+	/*padding-left: 200px;*/
 }
 .sub-menu-1 {
 	display: none;
 }
 .navbar .logo {
-	font-size: 36px;
+	font-size: 50px;
 	text-transform: uppercase;
 	font-weight: 500;
-	margin: 10px 0px;
+	margin: 10px 10px;
 
+}
+.nav-menu {
+	padding-right: 20vh;
 }
 
 .nav-menu ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/*padding-right: 50vh;*/
 }
 
 .nav-menu ul li {
@@ -138,17 +143,54 @@
 .content-section .button a:hover {
 	background-color: #9dd153;
 	transition: 0.5s ease;
+
 }
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+  color: #fff;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+  color: #fff;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+*//* END FOOTER 
+
+
+
 @media screen and (max-width: 768px) {
 	.toggle-btn {
 		display: flex;
 		z-index: 2;
 	}
 	.nav-menu ul {
-		/*width: -10%*/;
+		/*width: -10%;*/
+		display: inline-flex;
 		/*background-color: green;*/
-		flex-direction: column;
-		align-items: left;
+		/*flex-direction: column;*/
+		/*align-items: left;*/
 		padding-right: 0px;
 		position: absolute;
 		text-align: left;
@@ -163,6 +205,8 @@
 	.nav-menu {
 		display: flex;
 		width: 100%;
+
+
 	}
 	.nav-menu ul li{
 		margin: 10px 0px;
@@ -170,9 +214,20 @@
 	.nav-menu ul li a{
 		font-size: 19px;
 		text-align: right;
+
 	}
+	.nav-menu ul li:hover .sub-menu-1 {
+	display: block;
+	position: absolute;
+	background: black;
+	margin-top: 5px;
+	margin-left: 10px;
+	}
+
+
 	.navbar .logo {
-		font-size: 29px;
+		font-size: 19px;
+		margin-bottom: 15vh;
 	}
 
 	.content-section h1 {
