@@ -11,124 +11,74 @@
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<header>
+	<!-- <header> -->
    <!-- ***************header of the page**************** -->
-       <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img" alt="Logo image"></div>
-          </a>
-          <!--...........................Header beginning............................. -->
-  <h1 id="top"></h1>
-  <div class="menu-bar">
-    <h1 class="logo">Voting<span>Site</span></h1>
-    <ul>  
-      <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></>
-        <div class="sub-menu-1">
-        <ul>
-          <li><a href="#">Marketing</a><i class="fa-solid fa-angle-right" style="float: right;"></i></li>
-
-
-          <!-- ..........................Drop down for Mobile App begins........................ -->
-          <li class="Mob"><a href="#">Mobile App</a><i class="fa-solid fa-angle-right" style="float: right;"></i>
-          <div class="sub-menu-2">
-            <ul>
-              <li><a href="#">Andriod App</a></li>
-              <li><a href="#">iOS App</a></li>
-              <li><a href="#">Ionic App</a></li>
-              <li><a href="#">Flutter App</a></li>
-            </ul>
-          </div>
-          </li>
-          <!-- .......................Drop down for Web Designs begins....................................... -->
-          <li class="Mob"><a href="#">Web Designs</a><i class="fa fa-angle-right" style="float: right;"></i>
-          <div class="sub-menu-2">
-            <ul>
-              <li><a href="#">SEO</a></li>
-              <li><a href="#">Social Media</a></li>
-              <li><a href="#">Email Marketing</a></li>
-            </ul>
-          </div>
-          </li>
-        </ul>
-      </div>
-      <!-- ..........................Drop down for Mobile App ends..................... -->
-
-
-      <!-- ..........................Drop down for About begins..................... -->
-      <li><a href="#"></i>About</a>
-        <div>
-          <ul>
-            <li></li>
-          </ul>
-        </div>
-      </li>
-
-      <!-- ..........................Drop down for About ends..................... -->
-
-      <!-- ..........................Drop down for Menu begins..................... -->
-      <li><a href="#"><i class="fa-solid fa-bars"></i>Menu</a>
-      <div class="sub-menu-1">
-        <ul>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Setting</a></li>
-          <li><a href="#">Log-out</a></li>
+   <div class="header">
+     <nav class="navbar">
+       <div class="logo">Logo</div>
+       <!-- *************toggle-btn*************** -->
+       <a href="#" class="toggle-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+       </a>
+       <!-- ***************menu list**************** -->
+       <div class="nav-menu">
+         <ul>
+           <li><a href="">Home</a>
+            <div class="sub-menu-1">
+              <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Setting</a></li>
+                <li><a href="#">Log-out</a></li>
           <!-- <li><a href="#"></a></li> -->
-        </ul>
-      </div>
-      </li>
-      <!-- ..........................Drop down for Menu ends..................... -->
+              </ul>
+           </div>
+            </li>
 
-      <!-- ..........................Drop down for Contact Beginns..................... -->
-      <li><a href="#"><i class="fa-solid fa-phone"></i>Contact</a>
-        <div>
-          <ul>
-            <li></li>
-          </ul>
-        </div>
-      </li>
-      <!-- ..........................Drop down for Contact ends..................... -->
+           <li><a href="">About Us</a>
+            <div class="sub-menu-1">
+              <ul>
+                <li><a href="#">Political</a></li>
+                <li><a href="#">Election</a></li>
+                <li><a href="#">History</a></li>
+          <!-- <li><a href="#"></a></li> -->
+              </ul>
+           </div>
+           </li>
+           <li><a href="">Sign-up</a></li>
+           <li><a href="">FAQ</a>
+            <div class="sub-menu-1">
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"></a>Email</li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+           </div>
 
-      <!-- ..........................Drop down for Sign-up Beginns..................... -->
-      <li><a href="#">Sign-up</a>
-        <div>
-          <ul>
-            <li></li>
-          </ul>
-        </div>
-      </li>
-    <!-- </ul>!-- ..........................Drop down for Sign-up ends..................... -->
-    <!-- .................................Header ends.............................. -->
+     </nav>
+     </div>
+     <div class="content-section">
+       <h1>Onling Voting</h1>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore. <br>tur adipisicing elit, sed do eiusmod</p>
 
-    <!-- ********Navigation Toggle******** -->
-          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <!-- **********END********* -->
+       <div class="button">
+         <a href="">Join Now</a>
+       </div>
+     </div>
+   
+   <script type="text/javascript">
+     const toggleBtn=document.getElementByclassName('toggle-btn')[0]
+     const toggleBtn=document.getElementByclassName('nav-menu')[0]
+     toggleBtn.addEventListener("click", ()   =>{
+      nav-menu.classList.toggle("active")
+     }
+      )
 
-
-
-
-
-
-
-
-
-
-
-          <!-- ********** Logo and site Name******* -->
-          <!-- <div class="navbar-brand">
-            <a href="index.html"><h1><span>Online</span><span>Volting</span></h1></a>
-            <p>
-              <img src="images/star-k-logo.png" alt="#">
-              <span>Volt With Peace</span>
-            </p>
-          </div> -->
-          <!-- **********END********* -->
+   </script>
+</body>
+</html>
 
           
