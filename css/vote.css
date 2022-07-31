@@ -176,7 +176,7 @@
 #testimonials p:nth-child(2) {
   margin-top: 25px;
 }
-*//* END FOOTER 
+ /*END FOOTER */
 
 
 
@@ -186,7 +186,7 @@
 		z-index: 2;
 	}
 	.nav-menu ul {
-		/*width: -10%;*/
+		/*width: -10%;
 		display: inline-flex;
 		/*background-color: green;*/
 		/*flex-direction: column;*/
@@ -212,7 +212,7 @@
 		margin: 10px 0px;
 	}
 	.nav-menu ul li a{
-		font-size: 19px;
+		font-size: 24px;
 		text-align: right;
 
 	}
